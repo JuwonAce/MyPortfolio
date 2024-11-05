@@ -6,6 +6,7 @@ import { SiVercel } from "react-icons/si";
 
 const Header = ({ toggleTheme, currentTheme }) => {
   return (
+    <Head>
     <HeaderContainer>
       <Logo>My Portfolio</Logo>
       <Nav>
@@ -28,10 +29,18 @@ const Header = ({ toggleTheme, currentTheme }) => {
         </ToggleButton>
       </Nav>
     </HeaderContainer>
+    </Head>
   );
 };
 
 export default Header;
+
+const Head = styled.div`
+  background: ${({ theme }) => theme.headerBg};
+  color: ${({ theme }) => theme.headerText};
+  padding: 10px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+`
 
 const HeaderContainer = styled.header`
   background: ${({ theme }) => theme.headerBg};
@@ -45,7 +54,6 @@ const HeaderContainer = styled.header`
   max-width: 1200px;
   width: 100%;
   gap: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
   font-family: 'Inter', sans-serif;
 `;
 

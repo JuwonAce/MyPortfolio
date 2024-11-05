@@ -19,7 +19,6 @@ const AppContainer = styled.div`
 function App() {
   const [theme, setTheme] = useState('light');
 
-  // Toggle between light and dark themes
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };

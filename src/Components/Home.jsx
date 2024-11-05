@@ -9,8 +9,7 @@ const Home = () => {
           <h2>Welcome to My Portfolio</h2>
           <p>
             Hi👋,   <br />
-            My name is <br /> 
-            <GradientText>Ademola Adebambo</GradientText> <br /> 
+            My name is <GradientText> Ademola Adebambo </GradientText> <br /> 
             A passionate developer specializing in Front-End Development. <br />
             Explore my projects and get to know more about me.
           </p>
